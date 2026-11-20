@@ -269,8 +269,34 @@ html{scroll-behavior:smooth}section[id],[id=plan]{scroll-margin-top:76px}@media(
 .ft .cp{border-top:1px solid rgba(255,255,255,.15);padding-top:16px;font-size:13px;color:#AEB4AE}
 @media(min-width:900px){.ft .w{grid-template-columns:1.2fr 1fr 1fr}.ft .cp{grid-column:1/-1}}
 @media(max-width:899px){.ft{padding-bottom:calc(110px + env(safe-area-inset-bottom))}}
+
+/* ═══ HERO A — editorial split ═══ */
+body.hA .bn{border-radius:0 0 24px 24px}
+@media(min-width:900px){
+  body.hA .bn{height:660px;width:57%;margin-left:43%;border-radius:0 0 0 28px}
+  body.hA .bn-tag{left:28px}
+  body.hA .hero{margin-top:-660px;min-height:660px;width:43%;display:flex;align-items:center;padding:28px 0!important;pointer-events:auto}
+  body.hA .hero .w{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0 40px 0 max(24px,calc((100vw - 1180px)/2 + 24px))!important;margin:0!important;max-width:none!important}
+  body.hA .hero .w{width:100%;box-sizing:border-box}
+  body.hA .hero h1{font-size:clamp(38px,3.8vw,58px)}
+  body.hA .hero .kick::after{content:'';flex:0 0 60px;height:1px;background:var(--gold);margin-left:6px}
+}
+
+/* ═══ NAV A — anatomical atlas ═══ */
+.fig-atlas{display:none}
+body.nA .fig-old{display:none}body.nA .fig-atlas{display:block}
+body.nA .nx-map{background:#fff;background-image:linear-gradient(rgba(169,156,55,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(169,156,55,.07) 1px,transparent 1px);background-size:28px 28px}
+body.nA .nx-fig{color:#9C8F3A}
+.hs b{display:none}
+@media(min-width:900px){
+  body.nA .hs b{display:block;position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 12px var(--b);letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-txt);padding:4px 8px;background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:999px;pointer-events:none}
+  body.nA .hs.r b{left:40px}body.nA .hs.l b{right:40px}
+  body.nA .hs.on b{background:var(--ink);color:#fff;border-color:var(--ink)}
+  body.nA .nx-map{grid-template-columns:400px 1fr}
+}
+
 </style>
-</head><body>
+</head><body class="hA nA">
 <a id="top"></a>
 <header class="hd"><div class="w">
   <a class="lg" href="#top" aria-label="Olivezone Medical"><img src="logo.webp" alt="" width="44" height="32"><span><b>Olivezone Medical</b><small>Лечение и диагностика в Южной Корее</small></span></a>
@@ -312,14 +338,27 @@ html{scroll-behavior:smooth}section[id],[id=plan]{scroll-margin-top:76px}@media(
     <div class="nx-panel" role="tabpanel" id="nx-p1" aria-labelledby="nx-t1">
       <div class="nx-map">
         <div class="nx-fig">
-          <svg viewBox="0 0 300 420" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M102 74Q104 20 150 16Q196 20 198 74"/><ellipse cx="150" cy="84" rx="46" ry="58"/><path d="M128 74q8-5 15 0M157 74q8-5 15 0"/><path d="M150 80l-4 22q4 4 9 1"/><path d="M138 118q12 8 24 0"/><path d="M132 140v20M168 140v20"/><path d="M132 160Q90 168 64 190Q48 206 50 244l6 86M168 160Q210 168 236 190Q252 206 250 244l-6 86"/><path d="M100 248q22 24 46 6M154 254q24 18 46-6"/><path d="M88 262q8 40-2 70q-6 40 10 78M212 262q-8 40 2 70q6 40-10 78"/><path d="M150 300v30" opacity=".5"/></g></svg>
-          <button class="hs" style="left:50%;top:5%" data-z="0" aria-label="Волосы"><i></i></button>
-          <button class="hs" style="left:56%;top:17.5%" data-z="1" aria-label="Глаза"><i></i></button>
-          <button class="hs on" style="left:50%;top:24%" data-z="2" aria-label="Нос" aria-pressed="true"><i></i></button>
-          <button class="hs" style="left:65%;top:28%" data-z="3" aria-label="Контур лица"><i></i></button>
-          <button class="hs" style="left:57%;top:36%" data-z="4" aria-label="Подтяжка"><i></i></button>
-          <button class="hs" style="left:42%;top:61%" data-z="5" aria-label="Грудь"><i></i></button>
-          <button class="hs" style="left:50%;top:78%" data-z="6" aria-label="Тело"><i></i></button>
+<svg class="fig-atlas" viewBox="0 0 300 440" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="1.6" d="M112 64C110 100 122 130 150 140C178 130 190 100 188 64C186 40 168 30 150 30C132 30 114 40 112 64Z"/>
+<path stroke-width="1.4" d="M114 60C108 30 132 12 156 14C180 16 196 34 188 60"/><circle cx="170" cy="14" r="11" stroke-width="1.4"/>
+<path stroke-width="1" d="M128 76q9-5 18 0M154 76q9-5 18 0M131 86q6 3 12 0M157 86q6 3 12 0M150 90l-3 17q3 3 7 1M140 120q10 5 20 0"/>
+<path stroke-width="1.4" d="M138 138c2 14 0 24-6 32M162 138c-2 14 0 24 6 32"/>
+<path stroke-width="1" d="M124 182c12 6 22 6 26 4c4 2 14 2 26-4"/>
+<path stroke-width="1.6" d="M132 170C104 176 82 184 70 200C60 214 58 240 60 272M168 170C196 176 218 184 230 200C240 214 242 240 240 272"/>
+<path stroke-width="1.6" d="M84 214C86 250 90 280 96 302C104 332 100 362 92 404M216 214C214 250 210 280 204 302C196 332 200 362 208 404"/>
+<path stroke-width="1.2" d="M100 238c12 26 38 30 48 12M152 250c10 18 36 14 48-12"/>
+<circle cx="150" cy="322" r="2" fill="currentColor" stroke="none"/>
+<path stroke-width=".8" stroke-dasharray="2 5" opacity=".55" d="M150 6v430"/>
+<path stroke-width=".8" opacity=".5" d="M22 60h10M22 140h10M22 220h10M22 300h10M22 380h10M268 60h10M268 140h10M268 220h10M268 300h10M268 380h10"/>
+</g></svg>
+          
+          <button class="hs r" style="left:50%;top:5%" data-z="0" aria-label="Волосы"><i></i><b>Волосы</b></button>
+          <button class="hs r" style="left:56%;top:17.5%" data-z="1" aria-label="Глаза"><i></i><b>Глаза</b></button>
+          <button class="hs l on" style="left:50%;top:24%" data-z="2" aria-label="Нос" aria-pressed="true"><i></i><b>Нос</b></button>
+          <button class="hs r" style="left:65%;top:28%" data-z="3" aria-label="Контур лица"><i></i><b>Контур лица</b></button>
+          <button class="hs r" style="left:57%;top:36%" data-z="4" aria-label="Подтяжка"><i></i><b>Подтяжка</b></button>
+          <button class="hs l" style="left:42%;top:61%" data-z="5" aria-label="Грудь"><i></i><b>Грудь</b></button>
+          <button class="hs r" style="left:50%;top:78%" data-z="6" aria-label="Тело"><i></i><b>Тело</b></button>
         </div>
         <div class="nx-info" aria-live="polite">
           <p class="nx-k">Выберите зону</p>

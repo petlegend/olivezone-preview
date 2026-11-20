@@ -266,6 +266,32 @@ html{scroll-behavior:smooth}section[id],[id=plan]{scroll-margin-top:76px}@media(
 @media(min-width:900px){.ft .w{grid-template-columns:1.2fr 1fr 1fr}.ft .cp{grid-column:1/-1}}
 @media(max-width:899px){.ft{padding-bottom:calc(110px + env(safe-area-inset-bottom))}}
 
+/* ═══ HERO A — editorial split ═══ */
+body.hA .bn{border-radius:0 0 24px 24px}
+@media(min-width:900px){
+  body.hA .bn{height:660px;width:57%;margin-left:43%;border-radius:0 0 0 28px}
+  body.hA .bn-tag{left:28px}
+  body.hA .hero{margin-top:-660px;min-height:660px;width:43%;display:flex;align-items:center;padding:28px 0!important;pointer-events:auto}
+  body.hA .hero .w{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0 40px 0 max(24px,calc((100vw - 1180px)/2 + 24px))!important;margin:0!important;max-width:none!important}
+  body.hA .hero .w{width:100%;box-sizing:border-box}
+  body.hA .hero h1{font-size:clamp(38px,3.8vw,58px)}
+  body.hA .hero .kick::after{content:'';flex:0 0 60px;height:1px;background:var(--gold);margin-left:6px}
+}
+
+/* ═══ NAV A — anatomical atlas ═══ */
+.fig-atlas{display:none}
+body.nA .fig-old{display:none}body.nA .fig-atlas{display:block}
+body.nA .nx-map{background:#fff;background-image:linear-gradient(rgba(169,156,55,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(169,156,55,.07) 1px,transparent 1px);background-size:28px 28px}
+body.nA .nx-fig{color:#9C8F3A}
+.hs b{display:none}
+@media(min-width:900px){
+  body.nA .hs b{display:block;position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 12px var(--b);letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-txt);padding:4px 8px;background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:999px;pointer-events:none}
+  body.nA .hs.r b{left:40px}body.nA .hs.l b{right:40px}
+  body.nA .hs.on b{background:var(--ink);color:#fff;border-color:var(--ink)}
+  body.nA .nx-map{grid-template-columns:400px 1fr}
+}
+
+
 .rp{position:fixed;left:0;top:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--lime),var(--gold));z-index:70;pointer-events:none}
 .dt-top{padding-top:22px;padding-bottom:8px}
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:var(--mute);margin:0 0 16px}
