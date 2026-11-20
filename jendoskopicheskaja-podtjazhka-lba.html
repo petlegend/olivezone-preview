@@ -291,7 +291,18 @@ body.nA .nx-fig{color:#9C8F3A}
   body.nA .nx-map{grid-template-columns:400px 1fr}
 }
 
-.types a{display:inline-flex;align-items:center;min-height:44px}
+.types a{display:inline-flex;align-items:center;min-height:44px}.ft h4{margin:0 0 8px;font:600 13px var(--b);letter-spacing:1.5px;text-transform:uppercase;color:#CEDF03}
+.ft ul{list-style:none;margin:0;padding:0}.ft li{margin:0}
+.ft .ft-col a{color:#E8EBE6;text-decoration:none}.ft .ft-col a:hover{color:#fff;text-decoration:underline}
+.ft .ft-off p{color:#D8DCD6}
+.ft .ft-vk{gap:8px;text-decoration:none;border:1px solid rgba(255,255,255,.3);border-radius:var(--r);padding:0 14px}
+.ft .ft-vk:hover{border-color:#CEDF03}
+@media(min-width:900px){.ft .w{grid-template-columns:1.1fr 1.2fr 1.2fr!important;row-gap:30px}}
+.vc .snd{position:absolute;right:10px;bottom:10px;z-index:2;min-width:44px;min-height:44px;border:0;border-radius:22px;background:rgba(31,42,36,.72);color:#fff;font:600 13px var(--b);padding:0 12px;cursor:pointer}
+.vc .dur{position:absolute;left:10px;top:10px;z-index:2;background:rgba(250,248,243,.92);color:var(--ink);font:600 12px var(--b);letter-spacing:1px;border-radius:14px;padding:5px 10px}
+.vk-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:12px;padding:0 16px;border:1px solid var(--gold);border-radius:var(--r);color:var(--ink);text-decoration:none;font-weight:600;justify-self:center}
+.vk-btn svg{color:#0077FF}
+
 .rp{position:fixed;left:0;top:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--lime),var(--gold));z-index:70;pointer-events:none}
 .dt-top{padding-top:22px;padding-bottom:8px}
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:var(--mute);margin:0 0 16px}
@@ -406,10 +417,13 @@ body.nA .nx-fig{color:#9C8F3A}
 </section>
 </main>
 <footer class="ft"><div class="w">
-  <div><b>Olivezone Medical</b><p>Организация обследования и лечения в Южной Корее.</p><p>Мы не оказываем медицинские услуги и не ставим диагноз.</p><p>Имеются противопоказания. Необходима консультация специалиста.</p></div>
-  <div><p>Москва: 119619, Производственная ул., 11с8</p><p>Республика Корея, г. Сеул, 07806 Кансо-гу, Конхангдеро 222, здание Бальсан W Tower, офис 718</p><p><a href="tel:+79140757698">+7 914 075-76-98</a></p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p></div>
-  <div><p><a href="https://olivezonemedical.ru/privaci">Политика конфиденциальности</a></p><p><a href="https://olivezonemedical.ru/o-nas">О компании</a></p><p><a href="https://olivezonemedical.ru/kliniki">Клиники</a></p></div>
-  <p class="cp">© Olivezone Medical. Копирование и использование материалов сайта без письменного разрешения запрещено.</p>
+  <div class="ft-brand"><b>Olivezone Medical</b><p>Лечение и диагностика в Южной Корее</p></div>
+  <div class="ft-off"><h4>Офис в Южной Корее</h4><p>Моб.: <a href="tel:+821086910987">+82 10-8691-0987</a></p><p>FAX.: +82-50-4195-0987</p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p><p>Республика Корея, г. Сеул, 07806 Кансо-гу, Конхангдеро 222, здание Бальсан W Tower, офис 718</p></div>
+  <div class="ft-off"><h4>Головной офис в Российской Федерации</h4><p>Москва, Производственная ул., 11с8</p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p><p>Тел.: <a href="tel:+74951816055">+7(495)181-60-55</a></p><p>Моб.: <a href="tel:+79140757698">+7 914 075-76-98</a></p></div>
+  <nav class="ft-col" aria-label="Лечение и диагностика в Корее"><h4>Лечение и диагностика в Корее</h4><ul><li><a href="https://olivezonemedical.ru/kliniki">Клиники Кореи</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii">Лечение онкологии в Корее</a></li><li><a href="https://olivezonemedical.ru/diagnostika-v-koree">Диагностика в Корее</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree">Лечение заболеваний в Корее</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree/operacii-v-juzhnoj-koree">Операции в Корее</a></li><li><a href="plasticheskaja-hirurgija-v-koree.html">Пластика в Корее</a></li><li><a href="https://olivezonemedical.ru/o-nas/meditsinskij-turizm-stomatologiya">Стоматология в Корее</a></li></ul></nav>
+  <nav class="ft-col" aria-label="Поддержка"><h4>Поддержка</h4><ul><li><a href="https://olivezonemedical.ru/klientam/kak-oformit-zapros">Как сделать нам запрос</a></li><li><a href="https://olivezonemedical.ru/klientam/kak-zakazat-poezdku">Как заказать поездку</a></li><li><a href="https://olivezonemedical.ru/ceny">Цены на&nbsp;лечение в&nbsp;Корее</a></li><li><a href="https://olivezonemedical.ru/akcii">Акции и&nbsp;скидки</a></li></ul></nav>
+  <nav class="ft-col" aria-label="О компании"><h4>О компании</h4><ul><li><a href="https://olivezonemedical.ru/o-nas">О нас</a></li><li><a href="https://olivezonemedical.ru/novosti">Новости</a></li><li><a href="https://olivezonemedical.ru/klientam/otzyvy">Отзывы</a></li><li><a href="https://olivezonemedical.ru/kontakty">Контакты</a></li></ul></nav>
+  <div class="cp"><p>Мы не оказываем медицинские услуги и не ставим диагноз. Имеются противопоказания. Необходима консультация специалиста.</p><p><a href="https://olivezonemedical.ru/privaci">Политика конфиденциальности</a></p><p>© Olivezone Medical. Копирование и использование материалов сайта без письменного разрешения запрещено.</p></div>
 </div></footer>
 <div class="mbar" aria-label="Связаться">
   <p>Отвечаем в течение 24 часов, обычно — в тот же день</p>
