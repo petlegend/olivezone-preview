@@ -203,7 +203,7 @@ footer.role p{margin:0 0 8px;font-size:17px;color:var(--ink)}
 @media(prefers-reduced-motion:reduce){.bn-s{transition:none}}
 body{-webkit-user-select:none;user-select:none}input,textarea{-webkit-user-select:text;user-select:text}img{-webkit-user-drag:none}
 @media print{body>*:not(#docs){display:none!important}body{padding:0!important;background:#fff}#docs details{display:block}#docs details>*{display:block}#docs .note{display:block}.pick,.mbar,.bn{display:none!important}}
-
+html{scroll-behavior:smooth}section[id],[id=plan]{scroll-margin-top:76px}@media(min-width:900px){section[id]{scroll-margin-top:90px}}.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
 .hd{position:sticky;top:0;z-index:55;background:rgba(250,248,243,.94);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
 .hd .w{display:flex;align-items:center;gap:14px;min-height:64px}
 .hd .lg{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--ink)}
@@ -212,10 +212,10 @@ body{-webkit-user-select:none;user-select:none}input,textarea{-webkit-user-selec
 .hd nav{display:none;margin-left:auto;gap:26px}
 .hd nav a{font:500 15px var(--b);color:var(--ink);text-decoration:none;min-height:44px;display:flex;align-items:center}
 .hd nav a:hover{color:var(--gold-txt)}
-.hd .tel{display:none;font:600 15px var(--b);color:var(--ink);text-decoration:none;white-space:nowrap}
+.hd .tel{display:none;font:600 15px var(--b);color:var(--ink);text-decoration:none;white-space:nowrap;min-height:44px;align-items:center}
 .hd .cta{margin-left:auto;min-height:44px;padding:0 16px;font-size:15px}
 @media(max-width:899px){.hd .lg small{display:none}.hd .w{min-height:58px}.bn{aspect-ratio:16/10}}
-@media(min-width:900px){.hd .w{min-height:76px}.hd nav{display:flex}.hd .tel{display:block}.hd .cta{margin-left:0}}
+@media(min-width:900px){.hd .w{min-height:76px}.hd nav{display:flex}.hd .tel{display:flex}.hd .cta{margin-left:0}}
 .ft{background:#1F2A24;color:#D8DCD6;padding:40px 0 24px;font-size:15px}
 .ft .w{display:grid;gap:22px}
 .ft b{color:#fff;font:500 20px var(--h)}
@@ -464,13 +464,8 @@ body{-webkit-user-select:none;user-select:none}input,textarea{-webkit-user-selec
 </div></section>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://olivezonemedical.ru/#org","name":"Olivezone Medical","url":"https://olivezonemedical.ru/","telephone":"+7 914 075-76-98","address":{"@type":"PostalAddress","postalCode":"119619","addressLocality":"Москва","streetAddress":"Производственная ул., 11с8","addressCountry":"RU"},"sameAs":["https://t.me/olivezone_medical"]},{"@type":"WebSite","@id":"https://olivezonemedical.ru/#site","url":"https://olivezonemedical.ru/","name":"Olivezone Medical","inLanguage":"ru","publisher":{"@id":"https://olivezonemedical.ru/#org"}}]}</script>
-<footer class="role"><div class="w">
-  <p>Имеются противопоказания. Необходима консультация специалиста.</p>
-  <p>Мы не оказываем медицинские услуги и не ставим диагноз.</p>
-</div></footer>
-
 <footer class="ft"><div class="w">
-  <div><b>Olivezone Medical</b><p>Организация обследования и лечения в Южной Корее.</p><p>Мы не оказываем медицинские услуги и не ставим диагноз.</p></div>
+  <div><b>Olivezone Medical</b><p>Организация обследования и лечения в Южной Корее.</p><p>Мы не оказываем медицинские услуги и не ставим диагноз.</p><p>Имеются противопоказания. Необходима консультация специалиста.</p></div>
   <div><p>Москва: 119619, Производственная ул., 11с8</p><p>Республика Корея, г. Сеул, 07806 Кансо-гу, Конхангдеро 222, здание Бальсан W Tower, офис 718</p><p><a href="tel:+79140757698">+7 914 075-76-98</a></p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p></div>
   <div><p><a href="https://olivezonemedical.ru/privaci">Политика конфиденциальности</a></p><p><a href="https://olivezonemedical.ru/o-nas">О компании</a></p><p><a href="https://olivezonemedical.ru/kliniki">Клиники</a></p></div>
   <p class="cp">© Olivezone Medical. Копирование и использование материалов сайта без письменного разрешения запрещено.</p>
@@ -503,4 +498,5 @@ function render(){var box=root.querySelector('.msgs');box.innerHTML='';order().f
 root.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;g.querySelectorAll('.opt').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');sel[g.dataset.step]=b.textContent;if(sel.dir&&sel.city)root.querySelector('.step3').classList.remove('muted');render();if(window.ym)try{ym(112867557,'reachGoal','olz_step_'+g.dataset.step)}catch(e){}})});
 render()})();
 </script>
+<script>(function(){if(!("IntersectionObserver" in window)||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))return;var s=document.querySelectorAll(".sec .w, .hero .w");var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});s.forEach(function(el,i){if(i===0)return;el.classList.add("rv");io.observe(el)})})();</script>
 </body></html>
