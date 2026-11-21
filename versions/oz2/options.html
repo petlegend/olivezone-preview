@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olivezone Medical — варианты дизайна (предпросмотр)</title>
+<meta name="description" content="Пластическая хирургия, косметология, чекап и онкология в Южной Корее. Подбор клиники, документы, сопровождение на приёмах на русском языке.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://olivezonemedical.ru/">
+<meta property="og:title" content="Olivezone Medical — лечение в Корее">
+<meta property="og:image" content="bn-severance-wide.webp">
+<link rel="icon" href="logo.webp" type="image/webp">
+<meta name="theme-color" content="#FAF8F3">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="bn-plastika-wide.webp" fetchpriority="high">
+<style>
+
+:root{--bg:#FAF8F3;--paper:#FFFFFF;--ink:#1F2A24;--txt:#3B3F38;--mute:#696969;--gold-txt:#7A701C;--gold:#A99C37;--gold-ink:#1E1A08;--gold-soft:#F3EFD9;--lime:#CEDF03;--line:#E6E0D2;--r:8px;--h:'Playfair Display',Georgia,serif;--b:'Golos Text',Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:17px/1.65 var(--b);-webkit-text-size-adjust:100%}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+.w{max-width:1180px;margin:0 auto;padding:0 16px}
+.sec{padding:44px 0}
+.sec.alt{background:var(--paper)}
+.kick{display:flex;align-items:center;gap:10px;font:600 12px/1 var(--b);letter-spacing:3px;text-transform:uppercase;color:var(--gold-txt);margin:0 0 12px}
+.kick::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--lime)}
+h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:-.2px;margin:0}
+h2{font-size:clamp(28px,7.4vw,42px);line-height:1.15;margin-bottom:12px}
+.lead{color:var(--mute);margin:0 0 22px;max-width:760px}
+.more{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+.more::after{content:'→';color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:var(--r);background:var(--gold);color:var(--gold-ink);font:600 16px var(--b);text-decoration:none;border:0;cursor:pointer}
+.btn.o{background:transparent;border:1px solid var(--gold);color:var(--ink)}
+.btn:focus-visible,.more:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.terms{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+.terms li{font-size:14px;line-height:1.3;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--txt)}
+
+
+.bn{position:relative;overflow:hidden;background:#E9E6DC;aspect-ratio:6/5;max-height:60svh;width:100%}
+.bn-s{position:absolute;inset:0;opacity:0;transition:opacity .9s ease;pointer-events:none}
+.bn-s.on{opacity:1;pointer-events:auto}
+.bn-s picture,.bn-s img{display:block;width:100%;height:100%}.bn-s img{object-fit:cover}
+.bn-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#F1EDE2,#DDD6C4)}
+.bn-ph span{font:13px Arial,sans-serif;color:#6F6A5A;border:1px dashed #A9A28E;padding:8px 12px;max-width:80%;text-align:center}
+.bn-tag{position:absolute;left:16px;top:14px;font:600 11px var(--b);letter-spacing:3px;text-transform:uppercase;color:#fff;background:rgba(31,42,36,.38);padding:7px 11px;border-radius:999px;text-decoration:none}
+.bn-ui{position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;align-items:center}
+.bn-dots{display:flex}
+.bn-dots button{width:30px;height:44px;border:0;background:transparent;cursor:pointer;position:relative}
+.bn-dots button::after{content:'';position:absolute;left:8px;right:8px;top:21px;height:2px;background:rgba(255,255,255,.6);border-radius:2px}
+.bn-dots button[aria-current=true]::after{background:#fff;height:3px;top:20px}
+.bn-pp{width:44px;height:44px;border:0;background:transparent;cursor:pointer;position:relative}
+.bn-pp::before,.bn-pp::after{content:'';position:absolute;top:16px;width:3px;height:12px;background:#fff;border-radius:1px}
+.bn-pp::before{left:17px}.bn-pp::after{left:24px}
+.bn.paused .bn-pp::before{left:18px;width:0;height:0;background:none;border-left:10px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.bn.paused .bn-pp::after{display:none}
+.hero{padding:26px 0 30px}
+.hero h1{font-size:clamp(30px,8.2vw,56px);line-height:1.1;margin:0 0 14px;max-width:980px}
+.hero p{margin:0 0 20px;max-width:760px}
+.hero .row{display:flex;flex-wrap:wrap;gap:10px}
+.warn{margin:22px 0 0;padding:14px 16px;background:var(--gold-soft);border-radius:var(--r);font-size:17px;color:var(--ink)}
+
+
+.nav4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.clin b{overflow-wrap:break-word}
+@media(max-width:599px){.nav4{grid-template-columns:1fr}.nav4 a{min-height:0;display:grid;grid-template-columns:32px 1fr;column-gap:10px;row-gap:4px;padding:14px 16px}.nav4 .n{grid-row:1/3;padding-top:3px}}
+@media(max-width:899px){.nav4 .t{font-size:20px}.bn{aspect-ratio:16/11}.hero{padding:20px 0 24px}.hero h1{font-size:clamp(28px,7.6vw,40px)}}
+.nav4 a{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:150px;padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);text-decoration:none}
+.nav4 .n{font:500 13px var(--b);color:var(--gold-txt)}
+.nav4 .t{font:400 21px/1.2 var(--h);color:var(--ink)}
+.nav4 .s{font-size:13px;line-height:1.4;color:var(--mute)}
+.nav4 a:active{transform:scale(.99)}
+.other{display:flex;justify-content:space-between;align-items:center;margin-top:10px;min-height:52px;padding:0 16px;border:1px dashed var(--gold);border-radius:var(--r);text-decoration:none;font-weight:600;color:var(--ink)}
+.other::after{content:'→';color:var(--gold)}
+
+
+details.acc{border-top:1px solid var(--line)}
+details.acc:last-of-type{border-bottom:1px solid var(--line)}
+details.acc>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:58px;padding:10px 0;cursor:pointer;font:400 21px/1.25 var(--h);color:var(--ink)}
+details.acc>summary::-webkit-details-marker{display:none}
+details.acc>summary::after{content:'+';flex:0 0 32px;height:32px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;font:400 20px var(--b)}
+details.acc[open]>summary::after{content:'–'}
+details.acc .in{padding:0 0 18px}
+details.acc .in p{margin:6px 0 0}
+
+
+.axes{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+.axes::-webkit-scrollbar{display:none}
+.axes article{scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.axes h3{font-size:22px;margin:0 0 8px}
+.axes ul{margin:0;padding-left:18px;font-size:15px;line-height:1.5}
+
+
+.cols3{display:grid;gap:12px}
+.cols3 article{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.cols3 h3{font-size:22px;margin:0 0 6px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:16px -16px 0;padding:0 16px}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:var(--paper);text-decoration:none;font-size:15px;white-space:nowrap}
+
+
+.spec{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.spec li{border-bottom:1px solid var(--line)}
+.spec a{display:block;padding:12px 0;text-decoration:none}
+.spec b{display:block;font-weight:600;color:var(--ink)}
+.spec span{font-size:14px;color:var(--mute)}
+
+
+.chk{list-style:none;margin:0;padding:0}
+.chk li label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;width:100%}.chk li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line);font-size:16px}
+.chk input{flex:0 0 22px;width:22px;height:22px;margin:2px 0 0;accent-color:var(--gold)}
+.chk .todo{font-size:12px;color:#9A6B00;background:#FFF4D6;border-radius:2px;padding:1px 6px;margin-left:6px;white-space:nowrap}
+.note{font-size:15px;color:var(--mute);margin:14px 0 0}
+
+
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 22px 56px;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font:400 18px var(--h);color:var(--gold-txt);background:var(--bg)}
+.steps li:not(:last-child)::after{content:'';position:absolute;left:20px;top:42px;bottom:2px;width:1px;background:var(--line)}
+.steps b{display:block;font-weight:600;color:var(--ink)}
+.steps span{font-size:15px;color:var(--mute)}
+
+
+.clin{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 18px}
+.clin a,.clin div{display:flex;flex-direction:column;justify-content:space-between;min-height:104px;padding:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);text-decoration:none}
+.clin .first{grid-column:1/-1;min-height:120px;border-color:var(--gold)}
+.clin b{font:400 20px/1.2 var(--h);color:var(--ink)}
+.clin span{font-size:13px;color:var(--mute)}
+.clin .soon span{color:#9A6B00}
+.types{list-style:none;margin:0;padding:0;columns:1}
+.types li{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--line)}
+.types a{text-decoration:none;font-weight:500}
+
+
+.dir{display:grid;gap:18px;align-items:start}
+.dir .ph{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#EFEBDD,#D8D1BD);display:flex;align-items:center;justify-content:center;font:12px Arial;color:#6F6A5A;text-align:center}
+.dir ul{margin:8px 0 0;padding-left:18px}
+.rev{display:inline-block;margin-top:12px;font-size:14px;color:var(--mute);border:1px solid var(--line);border-radius:var(--r);padding:6px 10px}
+
+
+.plan .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px 16px}
+.plan .status{display:flex;align-items:center;gap:10px;font-size:15px;margin:0 0 18px}
+.plan .dot{width:9px;height:9px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(206,223,3,.18)}
+.plan .st{font:600 17px var(--b);color:var(--ink);margin:0 0 10px}
+.plan .st span{color:var(--gold-txt);margin-right:6px}
+.plan .opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.plan .opt{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink);font:16px/1.3 var(--b);cursor:pointer;text-align:left}
+.plan .opt[aria-pressed=true]{border-color:var(--gold);background:var(--gold-soft)}
+.plan .msgs{display:grid;gap:8px}
+.plan .msgs a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:var(--r);border:1px solid var(--gold);text-decoration:none;font-weight:600;color:var(--ink)}
+.plan .msgs a.main{background:var(--gold);color:var(--gold-ink)}
+.plan .muted{opacity:.45;pointer-events:none}
+.plan .copied{font-size:14px;color:var(--gold-txt);min-height:20px;margin:8px 0 0}
+
+
+.vid{display:grid;gap:18px;align-items:center}
+.vc{position:relative;aspect-ratio:9/16;width:min(62vw,300px);justify-self:center;overflow:hidden;border-radius:var(--r);background:#E9E6DC}
+.vc video{width:100%;height:100%;object-fit:cover}
+.vc .play{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.vc .play span{width:58px;height:58px;border-radius:50%;background:rgba(250,248,243,.94);display:flex;align-items:center;justify-content:center}
+.vc .play span::before{content:'';margin-left:4px;border-left:14px solid var(--gold);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.vc.playing .play{display:none}
+
+
+.mbar{display:none}
+@media(max-width:899px){
+  body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .mbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--gold);padding:6px 8px calc(8px + env(safe-area-inset-bottom))}
+  .mbar p{margin:0 0 6px;text-align:center;font-size:12px;color:var(--mute)}
+  .mbar .bt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border:1px solid var(--gold);border-radius:var(--r);background:#fff;color:var(--ink);font:600 15px var(--b);text-decoration:none}
+  .mbar a.p{background:var(--gold);color:var(--gold-ink)}
+}
+footer.role{padding:26px 0 40px;background:var(--paper)}
+footer.role p{margin:0 0 8px;font-size:17px;color:var(--ink)}
+
+/* ── PC ── */
+@media(min-width:900px){
+  .w{padding:0 24px}
+  .sec{padding:72px 0}
+  .bn{aspect-ratio:12/5;max-height:70vh}
+  .bn-tag{left:32px;top:28px}
+  .hero{padding:46px 0 40px}
+  .nav4{grid-template-columns:repeat(4,1fr);gap:14px}
+  .nav4 a{min-height:190px;padding:22px}
+  .nav4 a:hover{border-color:var(--gold)}
+  .ps{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+  .ps details.acc:last-of-type{border-bottom:0}
+  .axes{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);grid-auto-columns:auto;overflow:visible;margin:0;padding:0}
+  .cols3{grid-template-columns:repeat(3,1fr)}
+  .chips{flex-wrap:wrap;overflow:visible;margin:18px 0 0;padding:0}
+  .spec{grid-template-columns:repeat(3,1fr);column-gap:28px}
+  .docs{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+  .clin{grid-template-columns:repeat(4,1fr)}
+  .clin .first{grid-column:span 2}
+  .types{columns:2;column-gap:40px}
+  .dir{grid-template-columns:160px 1fr;gap:32px}
+  .dir .ph{width:160px;height:160px}
+  .vid{grid-template-columns:320px 1fr;gap:56px}
+  .vc{width:100%}
+  .plan .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+  .plan .msgs{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+}
+/* ── navigator (body map) ── */
+.navx{margin-top:6px}
+.nx-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 16px;padding:0 16px}
+.nx-tabs::-webkit-scrollbar{display:none}
+.nx-tabs button{flex:0 0 auto;display:flex;align-items:center;gap:8px;min-height:48px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font:500 15px var(--b);cursor:pointer;white-space:nowrap}
+.nx-tabs button span{font:400 13px var(--h);color:var(--gold-txt)}
+.nx-tabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.nx-tabs button[aria-selected=true] span{color:var(--lime)}
+.nx-map{display:grid;gap:18px;background:linear-gradient(160deg,#FFFFFF 0%,#F6F2E6 100%);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.nx-fig{position:relative;width:min(70vw,280px);aspect-ratio:300/420;justify-self:center;color:#B9AD58}
+.nx-fig svg{position:absolute;inset:0;width:100%;height:100%}
+.hs{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border:0;background:transparent;cursor:pointer;padding:0}
+.hs i{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(169,156,55,.18)}
+.hs i::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--gold);animation:hsp 2.4s ease-out infinite}
+.hs.on i{background:var(--ink);box-shadow:0 0 0 5px rgba(31,42,36,.15)}
+.hs:focus-visible{outline:2px solid var(--ink);outline-offset:-6px;border-radius:50%}
+@keyframes hsp{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.8);opacity:0}}
+.nx-k{margin:0 0 4px;font:600 12px var(--b);letter-spacing:2px;text-transform:uppercase;color:var(--gold-txt)}
+.nx-h{font-size:clamp(28px,7vw,40px);margin:0 0 10px}
+.nx-more{margin:14px 0 4px}
+.nx-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.nx-chips button{min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:15px var(--b);cursor:pointer}
+.nx-chips button.on{border-color:var(--gold);background:var(--gold-soft)}
+.nx-grid{display:grid;gap:10px}
+.nx-grid a{display:block;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);text-decoration:none}
+.nx-grid b{display:block;font:400 21px/1.2 var(--h);color:var(--ink);margin-bottom:6px}
+.nx-grid span{font-size:15px;color:var(--mute);line-height:1.45}
+.nx-grid a:hover{border-color:var(--gold)}
+@media(min-width:900px){.nx-tabs{margin:0 0 20px;padding:0}.nx-map{grid-template-columns:340px 1fr;gap:48px;align-items:center;padding:32px 40px}.nx-fig{width:100%}.nx-grid{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:reduce){.hs i::after{animation:none}}
+/* ── cinematic hero ── */
+.bn-s.on img{animation:kb 9s ease-out both}
+@keyframes kb{from{transform:scale(1.07)}to{transform:scale(1)}}
+@media(min-width:900px){
+  .hero{position:relative;margin-top:-240px;padding-top:0!important;z-index:2;pointer-events:none}
+  .hero .w{pointer-events:auto;background:rgba(250,248,243,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(169,156,55,.35);border-radius:var(--r);padding:34px 40px 30px;max-width:780px;margin-left:max(24px,calc((100% - 1180px)/2 + 24px));box-shadow:0 30px 60px -40px rgba(31,42,36,.45)}
+  .bn{aspect-ratio:auto;height:min(78vh,720px);max-height:none}
+  .bn-ui{top:22px;bottom:auto;left:auto;right:24px}
+}
+@media(prefers-reduced-motion:reduce){.bn-s.on img{animation:none}}
+/* ── journey line draws on scroll ── */
+.steps li:not(:last-child)::after{transform:scaleY(0);transform-origin:top;transition:transform 1.1s ease}
+.steps.drawn li:not(:last-child)::after{transform:scaleY(1);background:var(--gold)}
+.steps.drawn li:nth-child(2)::after{transition-delay:.25s}.steps.drawn li:nth-child(3)::after{transition-delay:.5s}.steps.drawn li:nth-child(4)::after{transition-delay:.75s}
+@media(prefers-reduced-motion:reduce){.steps li:not(:last-child)::after{transform:none;transition:none}}
+@media(prefers-reduced-motion:reduce){.bn-s{transition:none}}
+body{-webkit-user-select:none;user-select:none}input,textarea{-webkit-user-select:text;user-select:text}img{-webkit-user-drag:none}
+@media print{body>*:not(#docs){display:none!important}body{padding:0!important;background:#fff}#docs details{display:block}#docs details>*{display:block}#docs .note{display:block}.pick,.mbar,.bn{display:none!important}}
+html{scroll-behavior:smooth}section[id],[id=plan]{scroll-margin-top:76px}@media(min-width:900px){section[id]{scroll-margin-top:90px}}.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+.hd{position:sticky;top:0;z-index:55;background:rgba(250,248,243,.94);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+.hd .w{display:flex;align-items:center;gap:14px;min-height:64px}
+.hd .lg{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:var(--ink)}
+.hd .lg img{width:44px;height:32px}
+.hd .lg b{font:500 18px/1.1 var(--h)}.hd .lg small{display:block;font:12px var(--b);color:var(--mute)}
+.hd nav{display:none;margin-left:auto;gap:26px}
+.hd nav a{font:500 15px var(--b);color:var(--ink);text-decoration:none;min-height:44px;display:flex;align-items:center}
+.hd nav a:hover{color:var(--gold-txt)}
+.hd .tel{display:none;font:600 15px var(--b);color:var(--ink);text-decoration:none;white-space:nowrap;min-height:44px;align-items:center}
+.hd .cta{margin-left:auto;min-height:44px;padding:0 16px;font-size:15px}
+@media(max-width:899px){.hd .lg small{display:none}.hd .w{min-height:58px}.bn{aspect-ratio:16/10}}
+@media(min-width:900px){.hd .w{min-height:76px}.hd nav{display:flex}.hd .tel{display:flex}.hd .cta{margin-left:0}}
+.ft{background:#1F2A24;color:#D8DCD6;padding:40px 0 24px;font-size:15px}
+.ft .w{display:grid;gap:22px}
+.ft b{color:#fff;font:500 20px var(--h)}
+.ft a{color:#fff;display:inline-flex;align-items:center;min-height:44px}
+.ft p{margin:4px 0}
+.ft .cp{border-top:1px solid rgba(255,255,255,.15);padding-top:16px;font-size:13px;color:#AEB4AE}
+@media(min-width:900px){.ft .w{grid-template-columns:1.2fr 1fr 1fr}.ft .cp{grid-column:1/-1}}
+@media(max-width:899px){.ft{padding-bottom:calc(110px + env(safe-area-inset-bottom))}}
+
+/* switcher (preview only) */
+.opt-bar{position:fixed;left:50%;transform:translateX(-50%);top:10px;z-index:90;display:flex;gap:6px;padding:6px;background:rgba(31,42,36,.92);border-radius:999px;font:13px Arial,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+.opt-bar button{border:0;border-radius:999px;min-height:36px;padding:0 12px;background:transparent;color:#cfd5cf;cursor:pointer;white-space:nowrap}
+.opt-bar button[aria-pressed=true]{background:#C3D42B;color:#111}
+.opt-bar i{width:1px;background:#4b5650;margin:6px 2px}
+@media(max-width:899px){.opt-bar{top:auto;bottom:calc(112px + env(safe-area-inset-bottom));transform:translateX(-50%) scale(.92)}}
+
+/* ═══ HERO A — editorial split ═══ */
+body.hA .bn{border-radius:0 0 24px 24px}
+@media(min-width:900px){
+  body.hA .bn{height:660px;width:57%;margin-left:43%;border-radius:0 0 0 28px}
+  body.hA .bn-tag{left:28px}
+  body.hA .hero{margin-top:-660px;min-height:660px;width:43%;display:flex;align-items:center;padding:28px 0!important;pointer-events:auto}
+  body.hA .hero .w{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0 40px 0 max(24px,calc((100vw - 1180px)/2 + 24px))!important;margin:0!important;max-width:none!important}
+  body.hA .hero .w{width:100%;box-sizing:border-box}
+  body.hA .hero h1{font-size:clamp(38px,3.8vw,58px)}
+  body.hA .hero .kick::after{content:'';flex:0 0 60px;height:1px;background:var(--gold);margin-left:6px}
+}
+
+/* ═══ HERO B — immersive full-bleed ═══ */
+body.hB .bn::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(250,248,243,1) 0%,rgba(250,248,243,.86) 22%,rgba(250,248,243,0) 52%);pointer-events:none;z-index:1}
+body.hB .bn-tag,body.hB .bn-ui{z-index:2}
+body.hB .bn{height:42svh;min-height:300px;aspect-ratio:auto;max-height:none}
+body.hB .hero{position:relative;z-index:3;margin-top:-84px;padding-top:0!important}
+body.hB .bn-ui{top:14px;bottom:auto;left:auto;right:8px}
+body.hB .bn-dots button[aria-current=true]::after{background:rgba(255,255,255,.35);height:3px;top:20px}
+body.hB .bn-dots button[aria-current=true]::before{content:'';position:absolute;left:8px;top:20px;height:3px;width:0;background:#fff;border-radius:2px;animation:bfill 3s linear forwards;z-index:1}
+body.hB .bn.paused .bn-dots button[aria-current=true]::before{animation-play-state:paused}
+@keyframes bfill{to{width:calc(100% - 16px)}}
+@media(min-width:900px){
+  body.hB .bn{height:88vh;max-height:860px}
+  body.hB .hero{margin-top:-330px}
+  body.hB .hero .w{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0 24px!important;margin:0 auto!important;max-width:1180px!important}
+  body.hB .hero h1{font-size:clamp(46px,5vw,76px);max-width:900px}
+  body.hB .bn-ui{top:22px;right:24px}
+}
+
+/* ═══ NAV A — anatomical atlas ═══ */
+.fig-atlas{display:none}
+body.nA .fig-old{display:none}body.nA .fig-atlas{display:block}
+body.nA .nx-map{background:#fff;background-image:linear-gradient(rgba(169,156,55,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(169,156,55,.07) 1px,transparent 1px);background-size:28px 28px}
+body.nA .nx-fig{color:#9C8F3A}
+.hs b{display:none}
+@media(min-width:900px){
+  body.nA .hs b{display:block;position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 12px var(--b);letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-txt);padding:4px 8px;background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:999px;pointer-events:none}
+  body.nA .hs.r b{left:40px}body.nA .hs.l b{right:40px}
+  body.nA .hs.on b{background:var(--ink);color:#fff;border-color:var(--ink)}
+  body.nA .nx-map{grid-template-columns:400px 1fr}
+}
+
+/* ═══ NAV B — zone cards ═══ */
+.nx-cards{display:none}
+body.nB .nx-map{display:none}body.nB .nx-cards{display:block}
+.nx-cards .row{display:grid;grid-auto-flow:column;grid-auto-columns:42%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px 6px}
+.nx-cards .row::-webkit-scrollbar{display:none}
+.zc{scroll-snap-align:start;display:flex;flex-direction:column;gap:10px;min-height:150px;padding:16px;border:1px solid var(--line);border-radius:var(--r);background:#fff;cursor:pointer;text-align:left;font:inherit;color:var(--ink)}
+.zc svg{width:40px;height:40px;color:var(--gold)}
+.zc b{font:400 20px/1.2 var(--h)}
+.zc span{font-size:13px;color:var(--mute);line-height:1.4}
+.zc[aria-pressed=true]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);background:var(--gold-soft)}
+.nx-cards .det{margin-top:14px;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper)}
+@media(min-width:900px){.nx-cards .row{grid-auto-flow:row;grid-template-columns:repeat(7,1fr);overflow:visible;margin:0;padding:0}.zc{min-height:170px}}
+.types a{display:inline-flex;align-items:center;min-height:44px}.ft h4{margin:0 0 8px;font:600 13px var(--b);letter-spacing:1.5px;text-transform:uppercase;color:#CEDF03}
+.ft ul{list-style:none;margin:0;padding:0}.ft li{margin:0}
+.ft .ft-col a{color:#E8EBE6;text-decoration:none}.ft .ft-col a:hover{color:#fff;text-decoration:underline}
+.ft .ft-off p{color:#D8DCD6}
+.ft .ft-vk{gap:8px;text-decoration:none;border:1px solid rgba(255,255,255,.3);border-radius:var(--r);padding:0 14px}
+.ft .ft-vk:hover{border-color:#CEDF03}
+@media(min-width:900px){.ft .w{grid-template-columns:1.1fr 1.2fr 1.2fr!important;row-gap:30px}}
+.vc .snd{position:absolute;right:10px;bottom:10px;z-index:2;min-width:44px;min-height:44px;border:0;border-radius:22px;background:rgba(31,42,36,.72);color:#fff;font:600 13px var(--b);padding:0 12px;cursor:pointer}
+.vc .dur{position:absolute;left:10px;top:10px;z-index:2;background:rgba(250,248,243,.92);color:var(--ink);font:600 12px var(--b);letter-spacing:1px;border-radius:14px;padding:5px 10px}
+.vk-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:12px;padding:0 16px;border:1px solid var(--gold);border-radius:var(--r);color:var(--ink);text-decoration:none;font-weight:600;justify-self:center}
+.vk-btn svg{color:#0077FF}
+</style>
+</head><body class="hA nA">
+<div class="opt-bar" role="group" aria-label="Варианты"><button data-g="h" data-v="hA" aria-pressed="true">첫화면 A</button><button data-g="h" data-v="hB" aria-pressed="false">첫화면 B</button><i></i><button data-g="n" data-v="nA" aria-pressed="true">내비 A</button><button data-g="n" data-v="nB" aria-pressed="false">내비 B</button></div>
+<a id="top"></a>
+<header class="hd"><div class="w">
+  <a class="lg" href="#top" aria-label="Olivezone Medical"><img src="logo.webp" alt="" width="44" height="32"><span><b>Olivezone Medical</b><small>Лечение и диагностика в Южной Корее</small></span></a>
+  <nav aria-label="Разделы"><a href="#napravleniya">Направления</a><a href="#docs">Документы</a><a href="#kliniki">Клиники</a><a href="#faq">Вопросы</a></nav>
+  <a class="tel" href="tel:+79140757698">+7 914 075-76-98</a>
+  <a class="btn cta" href="#plan">Написать</a>
+</div></header>
+
+
+
+<div class="bn" aria-roledescription="carousel" aria-label="Olivezone Medical">
+  <div class="bn-s on"><picture><img src="bn-plastika-wide.webp" style="object-position:22% 45%" alt="Пластическая хирургия в Корее" fetchpriority="high" decoding="async"></picture><span class="bn-tag">Пластическая хирургия</span></div>
+  <div class="bn-s"><picture><img src="bn-checkup-wide.webp" style="object-position:68% 50%" alt="Обследование в Корее" loading="lazy" decoding="async"></picture><span class="bn-tag">Чекап</span></div>
+  <div class="bn-s"><picture><img src="bn-severance-wide.webp" style="object-position:50% 50%" alt="Университетская клиника в Сеуле, Корея" loading="lazy" decoding="async"></picture><span class="bn-tag">Клиники</span></div>
+  <div class="bn-s"><picture><img src="bn-equipment-wide.webp" style="object-position:50% 40%" alt="Медицинское оборудование клиник Кореи" loading="lazy" decoding="async"></picture><span class="bn-tag">Оборудование</span></div>
+  <div class="bn-s"><picture><img src="bn-seoul-wide.webp" style="object-position:50% 35%" alt="Сеул, вид на башню Намсан" loading="lazy" decoding="async"></picture><span class="bn-tag">Сеул</span></div>
+  <div class="bn-ui"><div class="bn-dots"><button type="button" aria-label="1" aria-current="true"></button><button type="button" aria-label="2"></button><button type="button" aria-label="3"></button><button type="button" aria-label="4"></button><button type="button" aria-label="5"></button></div><button type="button" class="bn-pp" aria-label="Пауза"></button></div>
+</div>
+
+<section class="hero"><div class="w">
+  <p class="kick">Olivezone Medical · Сеул</p>
+  <h1>Лечение в Южной Корее с поддержкой русскоязычного врача‑координатора</h1>
+  <p>Более 15 лет помогаем организовать обследование, лечение и пластические операции в Корее. Подбираем клинику, помогаем с документами и сопровождаем на приёмах.</p>
+  <div class="row"><a class="btn" href="#plan">Задать вопрос координатору</a><a class="btn o" href="#docs">Какие документы подготовить</a></div>
+  <p class="warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+</div></section>
+
+
+<section class="sec alt" id="napravleniya"><div class="w">
+  <p class="kick">Направления</p>
+  <h2>С чем мы помогаем</h2>
+  <div class="navx" id="navx" data-site="" data-rino="rinoplastika.html">
+    <div class="nx-tabs" role="tablist" aria-label="Направления">
+      <button role="tab" aria-selected="true" aria-controls="nx-p1" id="nx-t1"><span>01</span>Пластическая хирургия</button>
+      <button role="tab" aria-selected="false" aria-controls="nx-p2" id="nx-t2"><span>02</span>Косметология и дерматология</button>
+      <button role="tab" aria-selected="false" aria-controls="nx-p3" id="nx-t3"><span>03</span>Чекап</button>
+      <button role="tab" aria-selected="false" aria-controls="nx-p4" id="nx-t4"><span>04</span>Онкология и трансплантация</button>
+    </div>
+    <div class="nx-panel" role="tabpanel" id="nx-p1" aria-labelledby="nx-t1">
+<div class="nx-cards"><div class="row" role="group" aria-label="Зоны"><button class="zc" data-z="0" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8 22c0-9 6-15 12-15s12 6 12 15M20 7c3 6 8 9 12 9"/></svg><b>Волосы</b><span>Пересадка волос · FUE · FUT</span></button><button class="zc" data-z="1" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 20c5-7 11-10 16-10s11 3 16 10c-5 7-11 10-16 10S9 27 4 20Z"/><circle cx="20" cy="20" r="5"/></svg><b>Глаза</b><span>Блефаропластика · эпикантопластика</span></button><button class="zc" data-z="2" aria-pressed="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M20 6c-1 10-6 18-8 22c3 3 8 4 12 2M24 30c3 0 6-2 6-4"/></svg><b>Нос</b><span>Ринопластика · септопластика</span></button><button class="zc" data-z="3" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M10 8c-2 12 2 22 10 26c8-4 12-14 10-26M14 30l6 4 6-4"/></svg><b>Контур лица</b><span>Пластика скул · Пластика подбородка</span></button><button class="zc" data-z="4" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 6c-1 8 2 14 8 16c6-2 9-8 8-16M14 26v8M26 26v8M10 16l-4-4M30 16l4-4"/></svg><b>Подтяжка</b><span>Подтяжка СМАС · «MACS‑лифтинг»</span></button><button class="zc" data-z="5" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 14c3 10 11 13 14 6c3 7 11 4 14-6"/></svg><b>Грудь</b><span>Маммопластика · подтяжка груди</span></button><button class="zc" data-z="6" aria-pressed="false"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 4c-2 10-2 18 2 24c2 4 1 8-1 10M28 4c2 10 2 18-2 24c-2 4-1 8 1 10M18 22h4"/></svg><b>Тело</b><span>Липосакция · Абдоминопластика</span></button></div><div class="det" aria-live="polite"><p class="nx-k">Зона</p><h3 class="nx-h2" style="font-size:clamp(28px,7vw,40px);margin:0 0 10px">Нос</h3><ul class="terms nx-terms2"><li>Ринопластика</li><li>септопластика</li><li>остеотомия</li></ul><a class="more nx-more2" href="rinoplastika.html">Ринопластика</a></div></div>
+      <div class="nx-map">
+        <div class="nx-fig">
+<svg class="fig-atlas" viewBox="0 0 300 440" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="1.6" d="M112 64C110 100 122 130 150 140C178 130 190 100 188 64C186 40 168 30 150 30C132 30 114 40 112 64Z"/>
+<path stroke-width="1.4" d="M114 60C108 30 132 12 156 14C180 16 196 34 188 60"/><circle cx="170" cy="14" r="11" stroke-width="1.4"/>
+<path stroke-width="1" d="M128 76q9-5 18 0M154 76q9-5 18 0M131 86q6 3 12 0M157 86q6 3 12 0M150 90l-3 17q3 3 7 1M140 120q10 5 20 0"/>
+<path stroke-width="1.4" d="M138 138c2 14 0 24-6 32M162 138c-2 14 0 24 6 32"/>
+<path stroke-width="1" d="M124 182c12 6 22 6 26 4c4 2 14 2 26-4"/>
+<path stroke-width="1.6" d="M132 170C104 176 82 184 70 200C60 214 58 240 60 272M168 170C196 176 218 184 230 200C240 214 242 240 240 272"/>
+<path stroke-width="1.6" d="M84 214C86 250 90 280 96 302C104 332 100 362 92 404M216 214C214 250 210 280 204 302C196 332 200 362 208 404"/>
+<path stroke-width="1.2" d="M100 238c12 26 38 30 48 12M152 250c10 18 36 14 48-12"/>
+<circle cx="150" cy="322" r="2" fill="currentColor" stroke="none"/>
+<path stroke-width=".8" stroke-dasharray="2 5" opacity=".55" d="M150 6v430"/>
+<path stroke-width=".8" opacity=".5" d="M22 60h10M22 140h10M22 220h10M22 300h10M22 380h10M268 60h10M268 140h10M268 220h10M268 300h10M268 380h10"/>
+</g></svg>
+          <svg class="fig-old" viewBox="0 0 300 420" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M102 74Q104 20 150 16Q196 20 198 74"/><ellipse cx="150" cy="84" rx="46" ry="58"/><path d="M128 74q8-5 15 0M157 74q8-5 15 0"/><path d="M150 80l-4 22q4 4 9 1"/><path d="M138 118q12 8 24 0"/><path d="M132 140v20M168 140v20"/><path d="M132 160Q90 168 64 190Q48 206 50 244l6 86M168 160Q210 168 236 190Q252 206 250 244l-6 86"/><path d="M100 248q22 24 46 6M154 254q24 18 46-6"/><path d="M88 262q8 40-2 70q-6 40 10 78M212 262q-8 40 2 70q6 40-10 78"/><path d="M150 300v30" opacity=".5"/></g></svg>
+          <button class="hs r" style="left:50%;top:5%" data-z="0" aria-label="Волосы"><i></i><b>Волосы</b></button>
+          <button class="hs r" style="left:56%;top:17.5%" data-z="1" aria-label="Глаза"><i></i><b>Глаза</b></button>
+          <button class="hs l on" style="left:50%;top:24%" data-z="2" aria-label="Нос" aria-pressed="true"><i></i><b>Нос</b></button>
+          <button class="hs r" style="left:65%;top:28%" data-z="3" aria-label="Контур лица"><i></i><b>Контур лица</b></button>
+          <button class="hs r" style="left:57%;top:36%" data-z="4" aria-label="Подтяжка"><i></i><b>Подтяжка</b></button>
+          <button class="hs l" style="left:42%;top:61%" data-z="5" aria-label="Грудь"><i></i><b>Грудь</b></button>
+          <button class="hs r" style="left:50%;top:78%" data-z="6" aria-label="Тело"><i></i><b>Тело</b></button>
+        </div>
+        <div class="nx-info" aria-live="polite">
+          <p class="nx-k">Выберите зону</p>
+          <h3 class="nx-h">Нос</h3>
+          <ul class="terms nx-terms"><li>Ринопластика</li><li>септопластика</li><li>остеотомия</li></ul>
+          <a class="more nx-more" href="rinoplastika.html">Ринопластика</a>
+          <div class="nx-chips" aria-label="Зоны"><button data-z="0">Волосы</button><button data-z="1">Глаза</button><button data-z="2" class="on">Нос</button><button data-z="3">Контур лица</button><button data-z="4">Подтяжка</button><button data-z="5">Грудь</button><button data-z="6">Тело</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="nx-panel" role="tabpanel" id="nx-p2" aria-labelledby="nx-t2" hidden>
+      <div class="nx-grid"><a href="#kosmetologiya"><b>Морщины, птоз</b><span>Ботокс · Филлеры (гиалуроновая кислота)</span></a><a href="#kosmetologiya"><b>Пигментация, эритема</b><span>Пигментация кожи · Эритема · Витилиго</span></a><a href="#kosmetologiya"><b>Поры, акне, рубцы</b><span>Лазерная шлифовка · Удаление шрамов, татуировок</span></a><a href="#kosmetologiya"><b>Гипергидроз</b><span>Удаление потовых желез · инъекции ботокса</span></a></div>
+    </div>
+    <div class="nx-panel" role="tabpanel" id="nx-p3" aria-labelledby="nx-t3" hidden>
+      <div class="nx-grid"><a href="#chekap"><b>Онкология</b><span>ПЭТ‑КТ · низкодозированная КТ легких</span></a><a href="#chekap"><b>Сердце</b><span>КТ коронарных артерий (кальций) · УЗИ сердца</span></a><a href="#chekap"><b>Головной мозг</b><span>МРТ головного мозга и сосудов без контраста</span></a><a href="#chekap"><b>Женское здоровье</b><span>маммография · анализ на ВПЧ · денситометрия</span></a></div>
+    </div>
+    <div class="nx-panel" role="tabpanel" id="nx-p4" aria-labelledby="nx-t4" hidden>
+      <div class="nx-grid"><a href="#onko"><b>Диагностика</b><span>ПЭТ‑КТ · биопсия · иммуногистохимическое исследование</span></a><a href="#onko"><b>Лечение</b><span>роботизированная хирургия Да Винчи · таргетная терапия · протонная терапия</span></a><a href="#onko"><b>Трансплантация</b><span>Трансплантация печени · Трансплантация почки</span></a><a href="#onko"><b>Заболевания</b><span>Рак желудка · Рак лёгких · Рак молочной железы</span></a></div>
+    </div>
+  </div>
+  <a class="other" href="#drugie">Другие направления — 15 специальностей</a>
+</div></section>
+
+
+<section class="sec" id="plastika"><div class="w">
+  <p class="kick">01 · Пластическая хирургия</p>
+  <h2>Пластическая хирургия в Корее</h2>
+  <p class="lead">Для получения консультации по пластике необходимо прислать фотографии и указать желаемые операции.</p>
+  <div class="ps">
+    <details class="acc" open><summary>Контур лица</summary><div class="in"><ul class="terms"><li>Ортогнатическая хирургия</li><li>Пластика скул</li><li>Пластика подбородка</li><li>Резекция углов нижней челюсти</li></ul><p><a class="more" href="konturnaya-plastica.html">Контурная пластика лица</a></p></div></details>
+    <details class="acc"><summary>Глаза</summary><div class="in"><ul class="terms"><li>Блефаропластика верхнего века</li><li>Блефаропластика нижнего века</li><li>создание двойного века</li><li>эпикантопластика</li><li>коррекция птоза</li></ul><p><a class="more" href="blefaroplastika.html">Блефаропластика</a></p></div></details>
+    <details class="acc"><summary>Нос</summary><div class="in"><ul class="terms"><li>Ринопластика</li><li>септопластика</li><li>остеотомия</li></ul><p><a class="more" href="rinoplastika.html">Ринопластика</a></p></div></details>
+    <details class="acc"><summary>Подтяжка</summary><div class="in"><ul class="terms"><li>Подтяжка СМАС лица и шеи</li><li>«MACS‑лифтинг»</li><li>Эндоскопическая подтяжка лба и бровей</li></ul><p><a class="more" href="krugovaja-podtjazhka-lica-i-shei.html">Круговая подтяжка лица и шеи</a></p></div></details>
+    <details class="acc"><summary>Грудь</summary><div class="in"><ul class="terms"><li>Маммопластика</li><li>увеличение груди (аугментация) с помощью имплантов</li><li>подтяжка груди</li></ul><p><a class="more" href="mammoplastika-i-podtjazhka-grudi.html">Маммопластика и подтяжка груди</a></p></div></details>
+    <details class="acc"><summary>Тело</summary><div class="in"><ul class="terms"><li>Липосакция</li><li>липофилинг</li><li>Абдоминопластика</li><li>глютеопластика</li></ul><p><a class="more" href="liposakcija.html">Липосакция</a></p></div></details>
+    <details class="acc"><summary>Волосы</summary><div class="in"><ul class="terms"><li>Пересадка волос</li><li>FUE</li><li>FUT (STRIP)</li></ul><p><a class="more" href="peresadka-volos.html">Пересадка волос</a></p></div></details>
+  </div>
+  <p style="margin-top:22px;display:flex;flex-wrap:wrap;gap:16px"><a class="more" href="https://olivezonemedical.ru/kliniki/plasticheskie-kliniki">Клиники пластической хирургии</a><a class="more" href="stoimost-plasticheskih-operatsij-v-koree.html">Стоимость пластических операций</a></p>
+</div></section>
+
+
+<section class="sec alt" id="kosmetologiya"><div class="w">
+  <p class="kick">02 · Косметология и дерматология</p>
+  <h2>Косметология и дерматология</h2>
+  <div class="ps">
+    <details class="acc" open><summary>Морщины, птоз</summary><div class="in"><ul class="terms"><li>Ботокс</li><li>Филлеры (гиалуроновая кислота)</li><li>Гравитационный птоз мягких тканей</li></ul><p><a class="more" href="botok-filler-konturnye-inekcii.html">Ботокс, филлеры, контурные инъекции</a></p></div></details>
+    <details class="acc"><summary>Пигментация, эритема</summary><div class="in"><ul class="terms"><li>Пигментация кожи</li><li>Эритема</li><li>Витилиго</li></ul><p><a class="more" href="kosmetologija-v-koree.html">Косметология в Корее</a></p></div></details>
+    <details class="acc"><summary>Поры, акне, рубцы</summary><div class="in"><ul class="terms"><li>Расширенные поры и акне</li><li>Лазерная шлифовка</li><li>Удаление шрамов, татуировок</li></ul><p><a class="more" href="udalenie-shramov-tatuirovok.html">Удаление шрамов, татуировок</a></p></div></details>
+    <details class="acc"><summary>Гипергидроз</summary><div class="in"><ul class="terms"><li>Удаление потовых желез</li><li>инъекции ботокса</li></ul><p><a class="more" href="udalenie-potovyh-zhelez.html">Удаление потовых желез</a></p></div></details>
+    <details class="acc"><summary>Заболевания кожи</summary><div class="in"><ul class="terms"><li>Псориаз</li><li>Рак кожи</li></ul><p><a class="more" href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-psoriaza-v-koree">Лечение псориаза</a></p></div></details>
+  </div>
+</div></section>
+
+
+<section class="sec" id="chekap"><div class="w">
+  <p class="kick">03 · Чекап</p>
+  <h2>Обследование (Check‑Up) в Корее</h2>
+  <p class="lead">Исследования: лабораторные, гистологические, рентгенологические, аппаратные. Программу подбирают по жалобам и хроническим заболеваниям.</p>
+  <div class="axes">
+    <article><h3>Базовая программа</h3><ul><li>онкомаркеры (CEA, CA19‑9, AFP, PSA, CA125)</li><li>ЭКГ · спирометрия</li><li>УЗИ брюшной полости</li><li>гастроскопия</li></ul></article>
+    <article><h3>Онкология</h3><ul><li>ПЭТ‑КТ</li><li>низкодозированная КТ легких</li><li>колоноскопия с медикаментозным сном</li><li>КТ брюшной полости с контрастом</li></ul></article>
+    <article><h3>Сердце</h3><ul><li>УЗИ сердца</li><li>КТ коронарных артерий (кальций)</li><li>ядерное сканирование сердца</li><li>индекс ригидности артерий</li></ul></article>
+    <article><h3>Головной мозг</h3><ul><li>МРТ головного мозга и сосудов без контраста</li><li>УЗИ сонных артерий</li><li>Анализ оценки риска болезни Альцгеймера</li></ul></article>
+    <article><h3>Женское здоровье</h3><ul><li>маммография</li><li>УЗИ молочных желез</li><li>анализ на ВПЧ</li><li>денситометрия</li></ul></article>
+    <article><h3>VIP (день и ночь)</h3><ul><li>расширенная диагностика с госпитализацией</li></ul></article>
+  </div>
+  <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:16px"><a class="more" href="https://olivezonemedical.ru/diagnostika-v-koree">Все программы обследования</a><a class="more" href="plasticheskaja-hirurgija-v-koree.html">Пластическая хирургия</a></p>
+</div></section>
+
+
+<section class="sec alt" id="onko"><div class="w">
+  <p class="kick">04 · Онкология и трансплантация</p>
+  <h2>Онкология и трансплантация</h2>
+  <div class="cols3">
+    <article><h3>Диагностика</h3><ul class="terms"><li>ПЭТ‑КТ</li><li>МРТ</li><li>биопсия</li><li>иммуногистохимическое исследование</li><li>онкомаркеры</li></ul></article>
+    <article><h3>Лечение</h3><ul class="terms"><li>лапароскопический доступ</li><li>роботизированная хирургия Да Винчи</li><li>таргетная терапия</li><li>иммунотерапия</li><li>протонная терапия</li><li>томотерапия</li><li>Кибер‑нож</li><li>Гамма‑нож</li></ul></article>
+    <article><h3>Трансплантация</h3><ul class="terms"><li>Трансплантация печени</li><li>Трансплантация почки</li></ul><p style="margin:12px 0 0"><a class="more" href="https://olivezonemedical.ru/transplantacija-organov">Трансплантация органов</a></p></article>
+  </div>
+  <div class="chips"><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-zheludka">Рак желудка</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-ljogkih">Рак лёгких</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-molochnoj-zhelezy">Рак молочной железы</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-shhitovidnoj-zhelezy">Рак щитовидной железы</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-pecheni">Рак печени</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-podzheludochnoj-zhelezy">Рак поджелудочной железы</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/limfoma-nehodzhkinskaja">Лимфома</a><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/rak-krovi-lejkoz">Лейкоз</a></div>
+  <p style="margin-top:20px;display:flex;flex-wrap:wrap;gap:16px"><a class="more" href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii">Лечение онкологии в Корее</a><a class="more" href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii/oborudovanie-dlja-lechenii-onkologii-v-koree">Оборудование</a></p>
+</div></section>
+
+
+<section class="sec" id="drugie"><div class="w">
+  <details class="acc"><summary>Другие направления — 15 специальностей</summary><div class="in">
+    <ul class="spec">
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/kardiologija"><b>Кардиология</b><span>Аортокоронарное шунтирование · Стентирование</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/nejrohirugija"><b>Нейрохирургия и неврология</b><span>Радиохирургия «Кибер‑нож» · Аденома гипофиза</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/ortopedija-i-travmatologija"><b>Ортопедия и травматология</b><span>артроскопия · Грыжа межпозвоночного диска</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/oftalmologija"><b>Офтальмология</b><span>Ультразвуковая факоэмульсификация · Глаукома</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/otolaringologija"><b>Отоларингология</b><span>Септопластика · Тимпанопластика</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/ginekologija"><b>Гинекология и ЭКО</b><span>Экстракорпоральное оплодотворение · Миома матки</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/urologija"><b>Урология</b><span>Аденома предстательной железы · Мочекаменная болезнь</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/jendokrinologija"><b>Эндокринология</b><span>Сахарный диабет · Узловой зоб</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/nefrologija"><b>Нефрология</b><span>Гломерулонефрит · Гемодиализ</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/revmatologija"><b>Ревматология</b><span>Ревматоидный артрит · Подагра</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/sosudistaja-hirurgija"><b>Сосудистая хирургия</b><span>Аневризма аорты · Варикоз нижних конечностей</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/ozhirenie-i-bariatrija"><b>Ожирение и бариатрия</b><span>Бариатрические операции</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/proktologija"><b>Проктология</b><span>Геморрой · Язвенный колит</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/stomatologija"><b>Стоматология</b><span>Зубные импланты</span></a></li>
+      <li><a href="https://olivezonemedical.ru/lechenie-v-koree/pediatrija"><b>Педиатрия</b><span>Детская кардиология · Детская онкология</span></a></li>
+    </ul>
+    <p><a class="more" href="https://olivezonemedical.ru/zabolevaniya">Все заболевания</a></p>
+  </div></details>
+</div></section>
+
+
+<section class="sec alt" id="docs"><div class="w">
+  <p class="kick">Документы</p>
+  <h2>Какие документы подготовить</h2>
+  <p class="lead">Подготовьте выписки, заключения врачей и результаты проведённых исследований. Если есть снимки, сообщите об этом — мы подскажем, как их отправить.</p>
+  <div class="docs">
+    <details class="acc" open><summary>Для всех направлений</summary><div class="in"><ul class="chk">
+      <li><label><input type="checkbox"><span>подробное описание истории вашей болезни</span></label></li>
+      <li><label><input type="checkbox"><span>копии выписки из больницы</span></label></li>
+      <li><label><input type="checkbox"><span>результаты инструментальных и лабораторных исследований</span></label></li>
+      <li><label><input type="checkbox"><span>выписки, анализы и результаты обследований за последние 6 мес.</span></label></li>
+      <li><label><input type="checkbox"><span>копия заграничного паспорта</span></label></li>
+    </ul></div></details>
+    <details class="acc"><summary>Пластическая хирургия</summary><div class="in"><ul class="chk">
+      <li><label><input type="checkbox"><span>прислать фотографии и указать желаемые операции</span></label></li>
+      <li><label><input type="checkbox"><span>перенесённые операции, импланты<em class="todo">уточняется</em></span></label></li>
+    </ul></div></details>
+    <details class="acc"><summary>Чекап</summary><div class="in"><ul class="chk">
+      <li><label><input type="checkbox"><span>список ваших жалоб и хронических заболеваний</span></label></li>
+      <li><label><input type="checkbox"><span>выбор программы диагностики</span></label></li>
+      <li><label><input type="checkbox"><span>результаты прошлых обследований<em class="todo">уточняется</em></span></label></li>
+    </ul></div></details>
+    <details class="acc"><summary>Онкология</summary><div class="in"><ul class="chk">
+      <li><label><input type="checkbox"><span>КТ и МРТ снимки — рентгенологические снимки на CD‑диске</span></label></li>
+      <li><label><input type="checkbox"><span>результаты биопсии, гистологические стёкла, блоки</span></label></li>
+      <li><label><input type="checkbox"><span>иммуногистохимия, стадия (TNM)<em class="todo">уточняется</em></span></label></li>
+    </ul></div></details>
+  </div>
+  <p class="note">Отметки остаются только на вашем экране. Документы на сайт не загружаются — список уточнит координатор в мессенджере.</p>
+</div></section>
+
+
+<section class="sec" id="put"><div class="w vid">
+  <div class="vcw" style="display:grid;justify-items:center"><div class="vc"><video muted playsinline loop preload="none" poster="video-poster.webp" src="video-a.mp4"></video><span class="dur">15 сек</span><button class="play" aria-label="Смотреть видео"><span></span></button><button class="snd" type="button" aria-pressed="false">Звук</button></div><a class="vk-btn" href="https://vk.com/club174643181" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.8 17.3c-5.5 0-8.6-3.8-8.7-10h2.8c.1 4.6 2.1 6.5 3.7 6.9V7.3h2.6v3.9c1.6-.2 3.3-2 3.9-3.9h2.6c-.4 2.4-2.2 4.2-3.5 4.9 1.3.6 3.3 2.2 4.1 5.1h-2.9c-.6-1.9-2.1-3.4-4.2-3.6v3.6z"/></svg>Смотреть во ВКонтакте</a></div>
+  <div>
+    <p class="kick">Как всё устроено</p>
+    <h2>Ваш путь в корейскую клинику</h2>
+    <ol class="steps">
+      <li><b>Запрос и документы</b><span>В среднем обработка запроса составляет от 1 до 3 дней</span></li>
+      <li><b>K‑ETA и приглашение</b><span>Поможем с анкетой и документами</span></li>
+      <li><b>Встреча</b><span>В аэропорту, трансфер и проживание</span></li>
+      <li><b>Клиника</b><span>Обследование или лечение, перевод на приёме</span></li>
+      <li><b>Дома</b><span>Связь с координатором после поездки</span></li>
+    </ol>
+    <p style="margin:0">Мы организуем и сопровождаем. Диагноз и лечение — у врачей клиники.</p>
+  </div>
+</div></section>
+
+
+<section class="sec alt" id="kliniki"><div class="w">
+  <p class="kick">Клиники</p>
+  <h2>Клиники, с которыми мы работаем</h2>
+  <div class="clin">
+    <a class="first" href="https://olivezonemedical.ru/kliniki/plasticheskie-kliniki/klinika-banobagi"><b>Банобаги</b><span>Подробнее о клинике</span></a>
+    <a href="https://olivezonemedical.ru/kliniki/plasticheskie-kliniki/klinika-lavian"><b>Лавиан</b><span>Подробнее о клинике</span></a>
+    <div class="soon"><b>Вонджин</b><span>страница готовится</span></div>
+    <a href="https://olivezonemedical.ru/kliniki/plasticheskie-kliniki/klinika-dzhej-kej"><b>Джей Кей</b><span>Подробнее о клинике</span></a>
+    <a href="https://olivezonemedical.ru/kliniki/plasticheskie-kliniki"><b>Гранд · Айди · 365 · DA · Вью</b><span>Все клиники пластической хирургии</span></a>
+  </div>
+  <ul class="types">
+    <li><a href="https://olivezonemedical.ru/kliniki/mnogoprofilnye-universitetskie-kliniki">Университетские клиники Кореи</a></li>
+    <li><a href="https://olivezonemedical.ru/kliniki/specializirovannye-onkologicheskie-kliniki">Онкологические клиники</a></li>
+    <li><a href="https://olivezonemedical.ru/kliniki/specializirovannye-dermatologicheskie-kliniki">Косметологические и дерматологические клиники</a></li>
+    <li><a href="https://olivezonemedical.ru/kliniki/ortopedicheskie-kliniki">Ортопедические клиники</a></li>
+    <li><a href="https://olivezonemedical.ru/kliniki/specializirovannye-zhenskie-kliniki">Женские клиники</a></li>
+    <li><a href="https://olivezonemedical.ru/kliniki">Все клиники</a></li>
+  </ul>
+</div></section>
+
+
+<section class="sec" id="direktor"><div class="w dir">
+  <div class="ph">фото</div>
+  <div>
+    <p class="kick">Медицинское сопровождение</p>
+    <h2>Цхай Наталья Генадьевна</h2>
+    <p style="margin:0">Директор компании медицинского туризма Olivezone Medical, врач‑офтальмолог.</p>
+    <ul><li>Высшее медицинское образование</li><li>Владеет русским и корейским языками</li><li>2014–2017 — старший координатор Университетской больницы Сунчонхян</li></ul>
+    <p style="margin:12px 0 0"><a class="more" href="https://olivezonemedical.ru/chaj-natalja-gennadevna">Подробнее</a></p>
+  </div>
+</div></section>
+
+
+<section class="sec alt" id="faq"><div class="w">
+  <p class="kick">Вопросы</p>
+  <h2>Частые вопросы</h2>
+  <div class="ps">
+    <details class="acc" open><summary>Нужна ли виза для поездки в Южную Корею?</summary><div class="in"><p>Условия въезда зависят от гражданства, цели поездки и срока пребывания. До покупки билетов уточните действующие требования в консульстве Республики Корея и необходимость K‑ETA. Если для лечения нужна виза, поможем запросить приглашение у клиники.</p></div></details>
+    <details class="acc"><summary>Как и в какой валюте оплачивается лечение?</summary><div class="in"><p>Медицинские услуги оплачиваются в корейских вонах. Способы оплаты, сроки и необходимость предоплаты уточняются в выбранной клинике до поездки. Мы поможем заранее разобраться в этих условиях и спланировать расходы.</p></div></details>
+    <details class="acc"><summary>Поможете ли вы оформить K‑ETA?</summary><div class="in"><p>Да, поможем разобраться с анкетой и подготовить сведения для подачи, если K‑ETA требуется для вашей поездки. Заявку следует подавать заранее: рассмотрение обычно занимает до 72 часов, но может длиться дольше. Государственный сбор оплачивается отдельно. Одобренная K‑ETA не гарантирует въезд — окончательное решение принимает пограничная служба. Актуальные требования: www.k-eta.go.kr.</p></div></details>
+    <details class="acc"><summary>Встретят ли меня в аэропорту?</summary><div class="in"><p>Да, организуем встречу и трансфер до места проживания по предварительному согласованию. Пришлите данные рейса и сообщите, если вам нужна дополнительная помощь при передвижении.</p></div></details>
+    <details class="acc"><summary>Кто поможет с переводом в клинике?</summary><div class="in"><p>Мы заранее согласуем сопровождение на русском языке и уточним, кто будет помогать вам на приёмах и обследованиях: координатор клиники или сотрудник нашей команды.</p></div></details>
+    <details class="acc"><summary>Нужно ли оплачивать ваши услуги?</summary><div class="in"><p>Мы не берём плату с пациента за подбор клиники и организацию обращения. Лечение, проживание и другие расходы на поездку оплачиваются отдельно. До поездки уточним, какие услуги включены в согласованные условия, а какие требуют отдельной оплаты.</p></div></details>
+    <details class="acc"><summary>Как добираться до клиники?</summary><div class="in"><p>В зависимости от расположения гостиницы можно воспользоваться метро, такси или заранее согласованным трансфером. Поможем разобраться с маршрутом и при необходимости вызвать такси.</p></div></details>
+  </div>
+</div></section>
+
+
+<section class="sec plan" id="plan"><div class="w wrap">
+  <div>
+    <p class="kick">Консультация</p>
+    <h2>Начнём с одного сообщения</h2>
+    <p class="lead">Отвечает живой человек, не бот. Подберём клинику и программу и будем рядом на каждом шаге.</p>
+  </div>
+  <div class="card">
+    <p class="status"><span class="dot"></span>Горячая линия работает круглосуточно</p>
+    <p class="st"><span>1</span>Что вас интересует</p>
+    <div class="opts" data-step="dir"><button class="opt" aria-pressed="false">Пластическая хирургия</button><button class="opt" aria-pressed="false">Косметология</button><button class="opt" aria-pressed="false">Обследование (чекап)</button><button class="opt" aria-pressed="false">Онкология</button><button class="opt" aria-pressed="false">Другое направление</button></div>
+    <p class="st"><span>2</span>Откуда планируете поездку</p>
+    <div class="opts" data-step="city"><button class="opt" aria-pressed="false">Москва и область</button><button class="opt" aria-pressed="false">Санкт-Петербург</button><button class="opt" aria-pressed="false">Дальний Восток</button><button class="opt" aria-pressed="false">Другой город России</button><button class="opt" aria-pressed="false">Казахстан</button><button class="opt" aria-pressed="false">Узбекистан</button><button class="opt" aria-pressed="false">Кыргызстан</button><button class="opt" aria-pressed="false">Другая страна</button></div>
+    <div class="step3 muted"><p class="st"><span>3</span>Где вам удобнее общаться</p><div class="msgs"></div><p class="copied" aria-live="polite"></p></div>
+    <p class="warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+  </div>
+</div></section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://olivezonemedical.ru/#org","name":"Olivezone Medical","url":"https://olivezonemedical.ru/","telephone":"+7 914 075-76-98","address":{"@type":"PostalAddress","postalCode":"119619","addressLocality":"Москва","streetAddress":"Производственная ул., 11с8","addressCountry":"RU"},"sameAs":["https://t.me/olivezone_medical"]},{"@type":"WebSite","@id":"https://olivezonemedical.ru/#site","url":"https://olivezonemedical.ru/","name":"Olivezone Medical","inLanguage":"ru","publisher":{"@id":"https://olivezonemedical.ru/#org"}}]}</script>
+<footer class="ft"><div class="w">
+  <div class="ft-brand"><b>Olivezone Medical</b><p>Лечение и диагностика в Южной Корее</p><p><a class="ft-vk" href="https://vk.com/club174643181" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.8 17.3c-5.5 0-8.6-3.8-8.7-10h2.8c.1 4.6 2.1 6.5 3.7 6.9V7.3h2.6v3.9c1.6-.2 3.3-2 3.9-3.9h2.6c-.4 2.4-2.2 4.2-3.5 4.9 1.3.6 3.3 2.2 4.1 5.1h-2.9c-.6-1.9-2.1-3.4-4.2-3.6v3.6z"/></svg><span>Мы во ВКонтакте</span></a></p></div>
+  <div class="ft-off"><h4>Офис в Южной Корее</h4><p>Моб.: <a href="tel:+821086910987">+82 10-8691-0987</a></p><p>FAX.: +82-50-4195-0987</p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p><p>Республика Корея, г. Сеул, 07806 Кансо-гу, Конхангдеро 222, здание Бальсан W Tower, офис 718</p></div>
+  <div class="ft-off"><h4>Головной офис в Российской Федерации</h4><p>Москва, Производственная ул., 11с8</p><p><a href="mailto:info@olivezonemedical.ru">info@olivezonemedical.ru</a></p><p>Тел.: <a href="tel:+74951816055">+7(495)181-60-55</a></p><p>Моб.: <a href="tel:+79140757698">+7 914 075-76-98</a></p></div>
+  <nav class="ft-col" aria-label="Лечение и диагностика в Корее"><h4>Лечение и диагностика в Корее</h4><ul><li><a href="https://olivezonemedical.ru/kliniki">Клиники Кореи</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree/lechenie-onkologii">Лечение онкологии в Корее</a></li><li><a href="https://olivezonemedical.ru/diagnostika-v-koree">Диагностика в Корее</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree">Лечение заболеваний в Корее</a></li><li><a href="https://olivezonemedical.ru/lechenie-v-koree/operacii-v-juzhnoj-koree">Операции в Корее</a></li><li><a href="plasticheskaja-hirurgija-v-koree.html">Пластика в Корее</a></li><li><a href="https://olivezonemedical.ru/o-nas/meditsinskij-turizm-stomatologiya">Стоматология в Корее</a></li></ul></nav>
+  <nav class="ft-col" aria-label="Поддержка"><h4>Поддержка</h4><ul><li><a href="https://olivezonemedical.ru/klientam/kak-oformit-zapros">Как сделать нам запрос</a></li><li><a href="https://olivezonemedical.ru/klientam/kak-zakazat-poezdku">Как заказать поездку</a></li><li><a href="https://olivezonemedical.ru/ceny">Цены на&nbsp;лечение в&nbsp;Корее</a></li><li><a href="https://olivezonemedical.ru/akcii">Акции и&nbsp;скидки</a></li></ul></nav>
+  <nav class="ft-col" aria-label="О компании"><h4>О компании</h4><ul><li><a href="https://olivezonemedical.ru/o-nas">О нас</a></li><li><a href="https://olivezonemedical.ru/novosti">Новости</a></li><li><a href="https://olivezonemedical.ru/klientam/otzyvy">Отзывы</a></li><li><a href="https://olivezonemedical.ru/kontakty">Контакты</a></li></ul></nav>
+  <div class="cp"><p>Мы не оказываем медицинские услуги и не ставим диагноз. Имеются противопоказания. Необходима консультация специалиста.</p><p><a href="https://olivezonemedical.ru/privaci">Политика конфиденциальности</a></p><p>© Olivezone Medical. Копирование и использование материалов сайта без письменного разрешения запрещено.</p></div>
+</div></footer>
+<div class="mbar" aria-label="Связаться">
+  <p>Отвечаем в течение 24 часов, обычно — в тот же день</p>
+  <div class="bt"><a class="p" href="https://max.ru/u/f9LHodD0cOLF1Z8JKjbFqzo7bSwqogNhISatHBdVPy7frPdgkgw2bMty54o" target="_blank" rel="noopener">MAX</a><a href="https://t.me/olivezone_medical" target="_blank" rel="noopener">Telegram</a><a href="https://wa.me/79140757698" target="_blank" rel="noopener">WhatsApp</a></div>
+</div>
+
+<script>
+
+(function(){var bn=document.querySelector('.bn'),s=bn.querySelectorAll('.bn-s'),d=bn.querySelectorAll('.bn-dots button'),i=0,t,hold=false,user=false;
+function go(n){s[i].classList.remove('on');d[i].removeAttribute('aria-current');i=(n+s.length)%s.length;s[i].classList.add('on');d[i].setAttribute('aria-current','true');var im=s[i].querySelector('img');if(im)im.loading='eager'}
+function run(){clearInterval(t);if(!user&&!hold&&!document.hidden)t=setInterval(function(){go(i+1)},3000)}
+d.forEach(function(b,n){b.onclick=function(){go(n);run()}});
+bn.querySelector('.bn-pp').onclick=function(){user=!user;bn.classList.toggle('paused',user);run()};
+bn.addEventListener('mouseenter',function(){hold=true;run()});bn.addEventListener('focusin',function(){hold=true;run()});bn.addEventListener('focusout',function(e){if(!bn.contains(e.relatedTarget)){hold=false;run()}});bn.addEventListener('mouseleave',function(){hold=false;run()});
+var x0=null;bn.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});bn.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40){go(i+(dx<0?1:-1));run()}x0=null},{passive:true});
+document.addEventListener('visibilitychange',run);if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))run()})();
+/* navigator */
+(function(){var root=document.getElementById('navx');if(!root)return;
+var Z=[["Волосы",["Пересадка волос","FUE","FUT (STRIP)"],["peresadka-volos.html","Пересадка волос"]],
+["Глаза",["Блефаропластика верхнего века","Блефаропластика нижнего века","создание двойного века","эпикантопластика","коррекция птоза"],["blefaroplastika.html","Блефаропластика"]],
+["Нос",["Ринопластика","септопластика","остеотомия"],["rinoplastika.html","Ринопластика"]],
+["Контур лица",["Ортогнатическая хирургия","Пластика скул","Пластика подбородка","Резекция углов нижней челюсти"],["konturnaya-plastica.html","Контурная пластика лица"]],
+["Подтяжка",["Подтяжка СМАС лица и шеи","«MACS‑лифтинг»","Эндоскопическая подтяжка лба и бровей"],["krugovaja-podtjazhka-lica-i-shei.html","Круговая подтяжка лица и шеи"]],
+["Грудь",["Маммопластика","увеличение груди (аугментация) с помощью имплантов","подтяжка груди"],["mammoplastika-i-podtjazhka-grudi.html","Маммопластика и подтяжка груди"]],
+["Тело",["Липосакция","липофилинг","Абдоминопластика","глютеопластика"],["liposakcija.html","Липосакция"]]];
+var more=root.querySelector('.nx-more'),base=more.getAttribute('href').replace(/\/plasticheskaja-hirurgija-v-koree\/rinoplastika$/,'');
+function pick(i){var z=Z[i];root.querySelector('.nx-h').textContent=z[0];root.querySelector('.nx-terms').innerHTML=z[1].map(function(t){return'<li>'+t+'</li>'}).join('');
+var href=root.getAttribute('data-rino')&&i===2?root.getAttribute('data-rino'):(root.getAttribute('data-site')||'')+z[2][0];more.setAttribute('href',href);more.textContent=z[2][1];
+[].forEach.call(root.querySelectorAll('.hs'),function(b){var on=+b.dataset.z===i;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+[].forEach.call(root.querySelectorAll('.nx-chips button'),function(b){b.classList.toggle('on',+b.dataset.z===i)});
+if(window.ym)try{ym(112867557,'reachGoal','olz_nav_zone')}catch(e){}}
+[].forEach.call(root.querySelectorAll('.hs,.nx-chips button'),function(b){b.addEventListener('click',function(){pick(+b.dataset.z)})});
+var tabs=root.querySelectorAll('[role=tab]');[].forEach.call(tabs,function(t,i){t.addEventListener('click',function(){[].forEach.call(tabs,function(x){var on=x===t;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on})});
+t.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!k)return;var n=tabs[(i+k+tabs.length)%tabs.length];n.focus();n.click()})});
+})();
+/* journey line */
+(function(){var s=document.querySelector('.steps');if(!s)return;if(!('IntersectionObserver' in window)){s.classList.add('drawn');return}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){s.classList.add('drawn');io.disconnect()}})},{threshold:.3});io.observe(s)})();
+
+(function(){var r=document.querySelector('.bn')&&document.querySelector('.bn').parentNode||document;["contextmenu","dragstart","copy"].forEach(function(ev){document.addEventListener(ev,function(e){if(e.target.closest&&e.target.closest('input,textarea'))return;var z=e.target.closest&&e.target.closest('.olzh,body');if(z)e.preventDefault()})})})();
+
+document.querySelectorAll('.vc').forEach(function(c){var v=c.querySelector('video'),s=c.querySelector('.snd');if(s)s.onclick=function(e){e.stopPropagation();v.muted=!v.muted;s.setAttribute('aria-pressed',!v.muted);s.textContent=v.muted?'Звук':'Без звука';if(v.paused){v.play();c.classList.add('playing')}};c.querySelector('.play').onclick=function(){v.play();c.classList.add('playing')};v.onclick=function(){if(v.paused)v.play();else{v.pause();c.classList.remove('playing')}}});
+
+(function(){var root=document.getElementById('plan'),sel={dir:'',city:''},L={max:'https://max.ru/u/f9LHodD0cOLF1Z8JKjbFqzo7bSwqogNhISatHBdVPy7frPdgkgw2bMty54o',tg:'https://t.me/olivezone_medical',wa:'https://wa.me/79140757698'},N={max:'Написать в MAX',tg:'Написать в Telegram',wa:'Написать в WhatsApp'};
+function region(){var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}if(/^Asia\/(Almaty|Qostanay|Aqtobe|Aqtau|Atyrau|Oral|Qyzylorda|Tashkent|Samarkand|Bishkek|Dushanbe|Ashgabat|Baku|Yerevan|Tbilisi)$/.test(tz))return'cis';if(/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Kirov|Astrakhan|Saratov|Ulyanovsk|Simferopol)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/.test(tz))return'ru';return'other'}
+var CIS=['Казахстан','Узбекистан','Кыргызстан','Другая страна'];function order(){var c=sel.city;if(CIS.indexOf(c)>-1)return['wa','tg'];if(c)return['max','tg'];var r=region();return r==='cis'?['wa','tg']:r==='ru'?['max','tg']:['max','tg','wa']}
+function text(){var t='Здравствуйте! ';if(sel.dir)t+='Интересует: '+sel.dir.toLowerCase()+'. ';if(sel.city)t+='Поездка из: '+sel.city+'. ';return t+'Подскажите, пожалуйста, с чего начать.'}
+function render(){var box=root.querySelector('.msgs');box.innerHTML='';order().forEach(function(k,i){var a=document.createElement('a');a.className=i===0?'main':'';a.textContent=N[k];a.target='_blank';a.rel='noopener';a.href=L[k]+((k==='wa'||k==='tg')?'?text='+encodeURIComponent(text()):'');a.onclick=function(){if(k==='max'&&navigator.clipboard)navigator.clipboard.writeText(text()).then(function(){root.querySelector('.copied').textContent='Текст обращения скопирован — вставьте его в чат MAX.'}).catch(function(){});if(window.ym)try{ym(112867557,'reachGoal','olz_step3_'+k)}catch(e){}};box.appendChild(a)})}
+root.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;g.querySelectorAll('.opt').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');sel[g.dataset.step]=b.textContent;if(sel.dir&&sel.city)root.querySelector('.step3').classList.remove('muted');render();if(window.ym)try{ym(112867557,'reachGoal','olz_step_'+g.dataset.step)}catch(e){}})});
+render()})();
+</script>
+<script>(function(){if(!("IntersectionObserver" in window)||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))return;var s=document.querySelectorAll(".sec .w, .hero .w");var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});s.forEach(function(el,i){if(i===0)return;el.classList.add("rv");io.observe(el)})})();</script>
+<script>(function(){
+var b=document.body;document.querySelectorAll('.opt-bar button').forEach(function(x){x.onclick=function(){var g=x.dataset.g;document.querySelectorAll('.opt-bar [data-g='+g+']').forEach(function(y){y.setAttribute('aria-pressed',y===x);b.classList.remove(y.dataset.v)});b.classList.add(x.dataset.v)}});
+var q=location.hash.slice(1).split(',');q.forEach(function(v){if(!/^[hn][AB]$/.test(v))return;var x=document.querySelector('.opt-bar [data-v='+v+']');if(x)x.click()});
+var root=document.getElementById('navx');if(!root)return;var Z=[];
+document.querySelectorAll('.zc').forEach(function(c){c.onclick=function(){var i=+c.dataset.z;var hs=root.querySelector('.hs[data-z="'+i+'"]');if(hs)hs.click();
+root.querySelector('.nx-h2').textContent=root.querySelector('.nx-h').textContent;root.querySelector('.nx-terms2').innerHTML=root.querySelector('.nx-terms').innerHTML;var m=root.querySelector('.nx-more');var m2=root.querySelector('.nx-more2');m2.href=m.getAttribute('href');m2.textContent=m.textContent;
+document.querySelectorAll('.zc').forEach(function(z){z.setAttribute('aria-pressed',z===c)})}});
+})();</script>
+</body></html>
