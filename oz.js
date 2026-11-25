@@ -1,6 +1,7 @@
 // oz 버전 관리 — 구버전은 절대 지우지 않는다
 //   node oz.js list               버전 목록
 //   node oz.js save oz3 "메모"     지금 화면(루트)을 oz3 으로 고정 저장 (versions/oz3 + git 태그 oz3) 후 push
+//   node oz.js update oz2 "메모"   작은 수정 — 현재 번호 oz2 에 덮어쓰기 (직전 상태는 태그 oz2-before-날짜 로 보관)
 //   node oz.js restore oz2        oz2 로 원복 (원복 직전 화면도 자동 보관) 후 push
 // 규칙: 같은 이름 덮어쓰기 금지 · versions/ 와 태그는 삭제 금지 · 원복도 "새 커밋"이라 이력은 그대로 남는다
 const fs = require('fs'), path = require('path'), { execSync } = require('child_process');
@@ -27,6 +28,19 @@ function save(name, note, push = true) {
   if (push) { git('push -q origin main'); git(`push -q origin ${name}`); }
   return name;
 }
+// 작은 수정: 현재 번호(ozN)에 덮어쓴다 (전역 지침 0-8). 덮어쓰기 전 상태는 git 태그 ozN-before-날짜시각 으로 남겨 언제든 꺼낼 수 있다
+function update(name, note) {
+  const L = list(), v = L.find(x => x.name === name), dst = path.join(VER, name);
+  if (!v || !fs.existsSync(dst)) throw new Error(name + ' 저장본이 없습니다');
+  const stamp = now().slice(0, 16).replace(/[-: ]/g, '').replace(/^(\d{8})(\d{4})$/, '$1-$2');
+  git(`tag -a ${name}-before-${stamp} -m "${name} 덮어쓰기 직전 상태"`);
+  for (const f of siteFiles(dst)) if (!fs.existsSync(path.join(ROOT, f))) fs.unlinkSync(path.join(dst, f));
+  for (const f of siteFiles(ROOT)) fs.copyFileSync(path.join(ROOT, f), path.join(dst, f));
+  v.updates = (v.updates || []).concat([{ date: now(), note: note || '' }]); writeIndex(L);
+  git('add -A'); git(`commit -q -m "${name} 갱신 ${note ? '— ' + note.replace(/"/g, "'") : ''}"`);
+  git('push -q origin main'); git('push -q --tags origin');
+  return `${name} 갱신 완료 (이전 상태는 태그 ${name}-before-${stamp})`;
+}
 function restore(name) {
   if (name === 'oz1') { console.log('oz1 은 원래 사이트(olivezonemedical.ru) 그 자체입니다. 이 저장소는 oz1 을 바꾸지 않으므로 원복할 것이 없습니다. 보관본: C:\\AI WORK\\dev\\olivezone-renewal\\archive\\oz1_20261121'); return; }
   const src = path.join(VER, name);
@@ -44,6 +58,7 @@ function restore(name) {
 const [cmd, a, b] = process.argv.slice(2);
 try {
   if (cmd === 'save') console.log('저장 완료: ' + save(a, b));
+  else if (cmd === 'update') console.log(update(a, b));
   else if (cmd === 'restore') restore(a);
   else console.log(list().map(v => `${v.name}\t${v.date}\t${v.note}`).join('\n') || '저장본 없음');
 } catch (e) { console.error('중지: ' + e.message); process.exit(1); }
